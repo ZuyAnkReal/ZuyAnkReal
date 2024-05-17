@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZuyAnkReal</title>
+    <!-- Liên kết đến thư viện Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Các tệp CSS tùy chỉnh của bạn -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container-wrapper">
+    <header>
+        <div class="container">
+            <h1>MineMelon.Net</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#" id="home-link"><i class="fas fa-home"></i> Trang chủ</a></li>
+                    <li><a href="#" id="services-link"><i class="fas fa-cogs"></i> Dịch vụ</a></li>
+                    <li><a href="#" id="about-link"><i class="fas fa-info-circle"></i> Giới thiệu</a></li>
+                    <li><a href="#" id="contact-link"><i class="fas fa-envelope"></i> Liên hệ</a></li>
+                    <li><a href="#" id="logout-link" style="display:none;"><i class="fas fa-sign-out-alt"></i> Đăng xuất ngay</a></li>
+                </ul>
+                <ul class="user-actions" id="user-actions" style="display:none;">
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="main-content" id="main-content">
+        <div class="container">
+            <h2>Chào mừng thành viên mới đến với trang web của tôi!</h2>
+            <p>Nội dung chính của trang web là nhập code khi mua bên tôi.</p>
+        </div>
+    </section>
+
+    <section class="registration-login" id="login-section">
+        <div class="container">
+            <h2>Đăng nhập</h2>
+            <form id="login-form">
+                <label for="username">Tên đăng nhập:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Đăng nhập</button>
+            </form>
+        </div>
+    </section>
+
+<!-- Phần hiện chữ chúc mừng và nhập mã -->
+<section class="welcome-message" id="welcome-message" style="display:none;">
+    <div class="container">
+        <h2>Chào mừng bạn đã đăng nhập thành công!</h2>
+        <p>Vui lòng nhập mã đã mua dưới đây:</p>
+        <div class="verification-container">
+            <input type="text" id="verification-code" placeholder="Nhập mã">
+            <button type="button" id="verify-button">Xác nhận</button>
+        </div>
+        <div id="success-message" style="display:none;" class="success-message">
+            Mã của bạn đã được nhập thành công!
+        </div>            
+    </div>
+</section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
